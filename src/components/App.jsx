@@ -20,7 +20,7 @@ const App = () => (
   <ErrorBoundary>
     <Router>
       <Switch>
-        <Route path="/" exact component={articleHtml} />
+        <Route path="/" exact component={myComponent} />
         <Route path="/Profile" component={myComponent} />
         <Route path="/Feature" component={myComponent} />
         <Route component={Whoops404} />

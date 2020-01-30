@@ -87,15 +87,22 @@ section.furtureApp {
   }
 }
 
+aside.asideBar {
+  display: flex;
+  // flex-direction: row;
+  // width: 20%;
+  min-width: 20%;
+  min-height: 100vh;
+  background-color: slategray;
+}
+
 nav.mainMenu {
   display: flex;
   flex-direction: column;
-  background-color: slategray;
+  min-width: 100%;
   color: ghostwhite;
   // height: 100vh;
-  width: 20%;
-  min-width: 20%;
-  min-height: 100vh;
+
   text-align: center;
   a {
     color: ghostwhite;
@@ -113,42 +120,64 @@ nav.mainMenu {
   margin: auto;
 }
 
-// /* Mobile */
-// @media only screen and (max-width: 610px ){
-//   body{
-//     background-color: #F09A9D;
-//   }
-//   nav.mainMenu {
-//     flex-direction: row;
-//     width: 100vh;
-//     min-height: auto;
-//     justify-content: space-evenly;
-//     align-items: center;
-
-//   }
+// section, article, aside, footer, header, nav {
+//   display: block;
 // }
 
-// /* Tablet */
-// @media only screen and (min-width:611px) and (max-width: 1025px ){
-//   body{
-//     background-color:#F5CF8E
-//   }
-// }
+/* Mobile */
+@media only screen and (max-width: 610px ){
+  body{
+    background-color: #F09A9D;
+  }
+  aside.asideBar  {
+    display: flex;
+    width: 100vh;
+    min-height: auto;
 
-// /* Desktop */
-// @media only screen and (min-width: 1025px){
-//   body{
-//     background-color: #B2D6FF;
-//   }
-//   div.page {
-//     width: 960px;
-//     margin: auto;
-//   }
-//   nav.mainMenu {
-//     flex-direction: row;
-//     width: 100vh;
-//     min-height: auto;
-//     justify-content: space-evenly;
-//     align-items: center;
-//   }
-// }
+  }
+
+  nav.mainMenu {
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    a {
+      flex-direction: column;
+    }
+  }
+
+}
+
+/* Tablet */
+@media only screen and (min-width:611px) and (max-width: 1025px ){
+  body{
+    background-color:#F5CF8E
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1025px){
+  body{
+    background-color: #B2D6FF;
+  }
+  div.page {
+    width: 960px;
+    margin: auto;
+  }
+
+
+  aside.asideBar  {
+    display: flex;
+    width: 100vh;
+    min-height: auto;
+
+  }
+
+  nav.mainMenu {
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    a {
+      flex-direction: column;
+    }
+  }
+}
