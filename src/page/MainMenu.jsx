@@ -23,7 +23,6 @@ const MainMenu = () => (
       <NavLink to="/Profile" activeStyle={selectedStyle}>
         [Profile]
       </NavLink>
-
       <NavLink to="/Feature" activeStyle={selectedStyle}>
         [Feature]
       </NavLink>

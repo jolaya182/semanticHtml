@@ -9,6 +9,8 @@
  */
 // main menu page component
 import React from 'react';
+import Footer from './Footer';
+
 // import { NavLink } from 'react-router-dom';
 // bring what ever component to render
 
@@ -18,12 +20,15 @@ import React from 'react';
 // };
 
 const MiddleBody = () => (
-  <div>
-    <header>
-      <h3>MiddleBody</h3>
+  <div className="MiddleSection">
+    <header className=" MiddleHeader ">
+      <h3 className=" MiddleTopBody">MiddleTopBody</h3>
     </header>
-    <section>Section</section>
-    <article>article</article>
+    <section className="secticle">Section</section>
+    <section className="secticle">Section</section>
+    <article className="secticle">Article</article>
+    <article className="secticle">Article</article>
+    <Footer />
   </div>
 );
 

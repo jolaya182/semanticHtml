@@ -18,12 +18,11 @@ import React from 'react';
 // };
 
 const Footer = () => (
-  <footer>
-    <h3>Footer</h3>
-    <address>address</address>
-    <time> time</time>
-    <figcaption>figure caption</figcaption>
-    <address>address</address>
+  <footer className="footerClass">
+    <h3 className="footerPiece">FooterHeader</h3>
+    <address className="footerPiece">address</address>
+    <time className="footerPiece"> time</time>
+    <figcaption className="footerPiece">figure caption</figcaption>
   </footer>
 );
 
